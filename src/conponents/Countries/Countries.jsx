@@ -12,9 +12,12 @@ import Country from "../Country/Country";
     return (
         <div>
             <h3>Countries : {countries.length}</h3>
-            {
-                countries.map(country => <Country key={countries.cca3}  country={country}></Country>)
-            }
+            <div className="country-container">
+                  {
+                      countries.map(country => <Country key={countries.cca3}  country={country}></Country>)
+                  }
+                  
+            </div>
              
         </div>
     );
